@@ -1,0 +1,117 @@
+{
+  "results": [
+      {
+        "id": "image id",
+        "name" : "image name",
+        "distro": "image OS distro",
+        "distroRelease": "image OS release",
+        "digest": "image digest",
+        "collections": [
+          "collectionA",
+          "collectionB"
+        ],
+        "packages": [
+               {
+                  "type": "package type",
+                  "name": "package name",
+                  "version": "package version",
+                  "path": "package path, if exists",
+                  "licenses": [
+                     "licenseA",
+                     "licenseB"
+                  ]
+               },
+               {
+                ...
+               }
+        ],
+        "applications": [
+               {
+                  "name": "app name",
+                  "version": "app version",
+                  "path": "app path, if exists"
+               },
+               {
+                ...
+               }
+        ],
+        "compliances": [
+               {
+                  "id": "compliance issue ID",
+                  "title": "compliance issue title",
+                  "severity": "compliance issue severity",
+                  "description": "compliance issue description",
+                  "cause": "compliance issue cause, if exists",
+                  "layerTime": "layer time of the image layer to which the compliance issue belongs",
+                  "category": "compliance category",
+                  "pass": "true/false"
+               },
+               {
+                 ...
+               }
+        ],
+        "complianceDistribution": {
+                "critical": 0,
+                "high": 1,
+                "medium": 0,
+                "low": 0,
+                "total": 1
+        },
+        "complianceScanPassed": true/false,
+        "vulnerabilities": [
+               {
+                  "id": "CVE ID",
+                  "status": "CVE fix status",
+                  "cvss": CVSS,
+                  "vector": "CVSS vector",
+                  "description": "CVE description",
+                  "severity": "CVE severity",
+                  "packageName": "package name",
+                  "packageVersion": "package version",
+                  "link": "link to the CVE as provided in the Console UI",
+                  "riskFactors": [
+                        "Attack vector: network",
+                        "High severity",
+                        "Has fix"
+                   ],
+                  "tags": [
+                        "ignored",
+                        "in review"
+                  ],
+                  "impactedVersions": [
+                        "impacted versions phrase1",
+                        "impacted versions phrase2"
+                  ],
+                  "publishedDate": "publish date",
+                  "discoveredDate": "discovered date",
+                  "graceDays": "grace days",
+                  "fixedDate": "vendor fixed date, if exists",
+                  "layerTime": "layer time of the image layer to which the vulnerability belongs"
+               },
+               {
+                 ...
+               }
+        ],
+        "vulnerabilityDistribution": {
+                "critical": 0,
+                "high": 1,
+                "medium": 0,
+                "low": 19,
+                "total": 20
+        },
+        "vulnerabilitiesScanPassed": true/false,
+        "history": [
+               {
+                  "created": "time when the image layer was created",
+                  "instruction": "Dockerfile instruction and arguments used to create the layer"
+               },
+               {
+                 ...
+               }
+        ],
+        "scanTime": "the image scan time",
+        "scanID": "the image scan ID"
+      }
+   ],
+   "consoleURL": "url of the scan results in the Console UI"
+}
