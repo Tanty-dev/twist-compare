@@ -12,17 +12,24 @@
         ],
         "packages": [
                {
-                  "type": "package type",
-                  "name": "package name",
-                  "version": "package version",
+                  "type": "package1",
+                  "name": "package example 1",
+                  "version": "1.1.2",
                   "path": "package path, if exists",
                   "licenses": [
                      "licenseA",
                      "licenseB"
                   ]
                },
-               {
-                ...
+                {
+                  "type": "package2",
+                  "name": "package example 2",
+                  "version": "2.2.3",
+                  "path": "package path, if exists",
+                  "licenses": [
+                     "licenseA",
+                     "licenseB"
+                  ]
                }
         ],
         "applications": [
